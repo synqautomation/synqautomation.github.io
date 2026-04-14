@@ -1,6 +1,6 @@
-# Synq Automation Agency Website
+# SYNQMATIC Agency Website
 
-A static website for Synq Automation cloud automation agency, built for deployment on GitHub Pages.
+A static website for SYNQMATIC cloud automation agency, built for deployment on GitHub Pages.
 
 ## Site Structure
 
@@ -37,7 +37,7 @@ agency-site/
 
 Before going live, update the following:
 
-- [ ] Replace `Synq Automation` with your chosen agency name throughout all files
+- [ ] Replace `SYNQMATIC` with your chosen agency name throughout all files
 - [ ] Replace `hello@synqautomation.io` with your actual email address
 - [ ] Update LinkedIn URL in `index.html` contact section
 - [ ] Update team bios and certifications in `about.html`
