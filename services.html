@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services — SYNQMATIC</title>
-  <meta name="description" content="Fixed-scope, fixed-price cloud automation services. Cloud architecture reviews, FinOps, Terraform IaC, Policy-as-Code, CI/CD pipelines, and managed retainers. Delivered by senior engineers." />
+  <meta name="description" content="Real solutions for clouds that have already been built. Cloud health audits, FinOps, foundation builds, and security — delivered by senior architects." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -378,6 +378,63 @@
     .footer-links a { font-size: 0.8rem; color: var(--text-dim); transition: color 0.15s; }
     .footer-links a:hover { color: var(--text-muted); }
 
+    /* ── PRICING TABLE ── */
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.25rem;
+      font-size: 0.875rem;
+    }
+    .pricing-table th {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .pricing-table td {
+      padding: 0.65rem 0.75rem;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .pricing-table tr:last-child td { border-bottom: none; }
+    .pricing-table td:last-child {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    .pricing-table td:first-child { font-weight: 500; color: var(--text); }
+    .sc-problem, .sc-delivers { grid-column: 1 / -1; }
+    .sc-problem h4, .sc-delivers h4 {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+    }
+    .sc-problem p, .sc-delivers p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+    .sc-platforms {
+      grid-column: 1 / -1;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+      margin-top: 0.25rem;
+    }
+    .sc-platforms span { color: var(--text-muted); }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 760px) {
       .service-card { grid-template-columns: 1fr; }
@@ -408,319 +465,186 @@
   <!-- PAGE HEADER -->
   <header class="page-header">
     <div class="page-header-inner">
-      <p class="page-eyebrow">// Services</p>
-      <h1 class="page-title">Cloud automation<br>that actually ships.</h1>
-      <!-- <p class="page-subtitle">Fixed-scope, fixed-price engagements. Every project is led by a senior cloud architect from first call to final handover.</p> -->
+      <p class="page-eyebrow">Services</p>
+      <h1 class="page-title">Real solutions for clouds<br>that have already been built.</h1>
+      <p class="page-subtitle">Most cloud consulting is designed for companies starting from scratch. Synqmatic is built for the companies that are already running in the cloud — and need to fix, modernize, and take back control of what they have.</p>
     </div>
   </header>
 
-  <!-- ── SECTION 1: PROJECT WORK ── -->
+  <!-- ── SECTION 1: SERVICES ── -->
   <section id="projects">
     <div class="section-inner">
-      <p class="section-label"> // Services</p>
-      <!-- <h2 class="section-heading">One-off engagements</h2>
-      <p class="section-desc">Fixed-scope, fixed-price projects with a defined brief, timeline, and acceptance criteria. 50% upfront, 50% on delivery. All projects include a 30-day check-in call.</p> -->
+      <p class="section-label">Services</p>
 
       <div class="service-list">
 
-        <!-- S1 — Cloud Readiness Assessment -->
+        <!-- 01 — Cloud Health Audit -->
         <div class="service-card featured">
           <div class="sc-header">
-            <div class="sc-icon">🏗</div>
-            <div class="sc-title-block">
-              <div class="sc-name">Cloud Readiness Assessment</div>
-            </div>
-          </div>
-          <p class="sc-desc">Gain complete clarity on your IT landscape before you move a single workload. We evaluate your applications, infrastructure, and dependencies to deliver a prioritized migration roadmap with a strategy tailored to every workload — so you migrate with confidence, not guesswork.</p>
-          <!-- <div class="sc-deliverables">
-            <h4>What you get</h4>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div> -->
-          <div class="sc-meta">
-            <!-- <div class="meta-row">
-              <span class="meta-label">Price</span>
-              <span class="meta-value price">$2,000 – $3,500</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">1 – 2 weeks</span>
-            </div> -->
-            <div class="meta-row">
-              <span class="meta-label">Platforms</span>
-              <span class="meta-value">AWS · Azure · GCP</span>
-            </div>
-          </div>
-          <!-- <div class="upsell-note">↳ <span>Findings typically lead directly to: FinOps Jumpstart, Terraform/IaC Foundation, or Policy-as-Code Setup</span></div> -->
-        </div>
-
-        <!-- S2 — Cloud Architecture Design -->
-        <div class="service-card featured">
-          <div class="sc-header">
-            <div class="sc-icon">🏗</div>
-            <div class="sc-title-block">
-              <div class="sc-name">Cloud Architecture Design</div>
-            </div>
-          </div>
-          <p class="sc-desc">Start your cloud journey on the right foundation — not one you'll need to tear down and rebuild in 12 months. We design a production-ready landing zone across AWS, Azure, or GCP that bakes in security, governance, networking, and cost controls from day one.</p>
-          <!-- <div class="sc-deliverables">
-            <h4>What you get</h4>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div> -->
-          <div class="sc-meta">
-            <!-- <div class="meta-row">
-              <span class="meta-label">Price</span>
-              <span class="meta-value price">$2,000 – $3,500</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">1 – 2 weeks</span>
-            </div> -->
-            <div class="meta-row">
-              <span class="meta-label">Platforms</span>
-              <span class="meta-value">AWS · Azure · GCP</span>
-            </div>
-          </div>
-          <!-- <div class="upsell-note">↳ <span>Findings typically lead directly to: FinOps Jumpstart, Terraform/IaC Foundation, or Policy-as-Code Setup</span></div> -->
-        </div>
-
-        <!-- S3 — Migration Planning & Execution -->
-        <div class="service-card featured">
-          <div class="sc-header">
-            <div class="sc-icon">🏗</div>
-            <div class="sc-title-block">
-              <div class="sc-name">Migration Planning & Execution</div>
-            </div>
-          </div>
-          <p class="sc-desc">Turn your migration roadmap into reality with structured, wave-based execution that keeps your business running while workloads move to the cloud. We handle the end-to-end migration — from environment preparation and testing through cutover and validation — so your team stays focused on operations.</p>
-          <!-- <div class="sc-deliverables">
-            <h4>What you get</h4>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div> -->
-          <div class="sc-meta">
-            <!-- <div class="meta-row">
-              <span class="meta-label">Price</span>
-              <span class="meta-value price">$2,000 – $3,500</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">1 – 2 weeks</span>
-            </div> -->
-            <div class="meta-row">
-              <span class="meta-label">Platforms</span>
-              <span class="meta-value">AWS · Azure · GCP</span>
-            </div>
-          </div>
-          <!-- <div class="upsell-note">↳ <span>Findings typically lead directly to: FinOps Jumpstart, Terraform/IaC Foundation, or Policy-as-Code Setup</span></div> -->
-        </div>
-
-        <!-- S1 — Cloud Architecture Review -->
-        <!-- <div class="service-card featured">
-          <div class="sc-header">
-            <div class="sc-icon">🏗</div>
+            <div class="sc-icon">🔍</div>
             <div class="sc-title-block">
               <div class="sc-badges">
-                <span class="badge lead">Lead Offer</span>
-                <span class="badge">Phase 1 Priority</span>
+                <span class="badge lead">Entry Point</span>
+                <span class="badge">Fixed Price</span>
               </div>
-              <div class="sc-name">Cloud Architecture Review</div>
+              <div class="sc-name">01 — Cloud Health Audit</div>
             </div>
           </div>
-          <p class="sc-desc">A structured audit of your existing cloud environment — gaps, misconfigurations, redundancies, and cost inefficiencies surfaced and prioritised. The most common starting point for new clients. Findings naturally open the door to IaC, FinOps, or security work.</p>
-          <div class="sc-deliverables">
-            <h4>What you get</h4>
+          <div class="sc-problem">
+            <h4>The problem it solves</h4>
+            <p>You're running in the cloud but you're not entirely sure what's running, why it's architected the way it is, or whether it would hold up under scrutiny — from a security review, an enterprise customer's questionnaire, or your own engineering team trying to make a change safely.</p>
+          </div>
+          <div class="sc-delivers">
+            <h4>What we deliver</h4>
+            <p>A structured audit of your cloud environment covering architecture, networking, security posture, cost efficiency, and infrastructure hygiene — with particular depth on network topology, cross-cloud connectivity, and data transfer costs. Every finding maps to a clear recommendation and priority level.</p>
+          </div>
+          <div class="sc-deliverables" style="grid-column: 1 / -1;">
+            <h4>What you walk away with</h4>
             <ul>
-              <li>Architecture assessment report</li>
-              <li>Prioritised finding and remediation list</li>
-              <li>Executive summary suitable for leadership</li>
-              <li>1-hour findings walkthrough call</li>
+              <li>Full inventory of your cloud environment with architecture documentation</li>
+              <li>Prioritized findings across architecture, security, cost, and operational risk</li>
+              <li>A clear roadmap with recommended next steps — scoped to your team's capacity</li>
+              <li>An honest picture of what's urgent, what can wait, and what's actually fine</li>
             </ul>
           </div>
-          <div class="sc-meta">
-            <div class="meta-row">
-              <span class="meta-label">Price</span>
-              <span class="meta-value price">$2,000 – $3,500</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">1 – 2 weeks</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Platforms</span>
-              <span class="meta-value">AWS · Azure · GCP · OCI</span>
-            </div>
+          <div style="grid-column: 1 / -1;">
+            <table class="pricing-table">
+              <thead><tr><th></th><th>Best For</th><th>Timeline</th><th>Investment</th></tr></thead>
+              <tbody>
+                <tr><td>Starter</td><td>Single cloud, focused scope</td><td>1–2 weeks</td><td>$3,500–$5,000</td></tr>
+                <tr><td>Comprehensive</td><td>Multi-cloud or hybrid environments</td><td>3–4 weeks</td><td>$8,000–$15,000</td></tr>
+              </tbody>
+            </table>
           </div>
-          <div class="upsell-note">↳ <span>Findings typically lead directly to: FinOps Jumpstart, Terraform/IaC Foundation, or Policy-as-Code Setup</span></div>
-        </div> -->
+          <div class="sc-platforms">Platforms: <span>AWS · Azure · GCP · OCI</span></div>
+        </div>
 
-        <!-- S5 — FinOps Jumpstart -->
-        <!-- <div class="service-card featured">
+        <!-- 02 — FinOps Quickstart -->
+        <div class="service-card featured">
           <div class="sc-header">
-            <div class="sc-icon">📊</div>
+            <div class="sc-icon">💸</div>
             <div class="sc-title-block">
               <div class="sc-badges">
+                <span class="badge lead">Entry Point</span>
                 <span class="badge roi">Strongest ROI</span>
-                <span class="badge">Savings Guaranteed</span>
               </div>
-              <div class="sc-name">FinOps Jumpstart</div>
+              <div class="sc-name">02 — FinOps Quickstart</div>
             </div>
           </div>
-          <p class="sc-desc">A proper FinOps engagement — not just a cost audit. We analyse cloud spend, identify waste, and deliver a tagging standard, budget guardrails, and Python automation scripts to keep savings locked in. Cloud waste across the industry is projected at $44.5B in 2025. Most clients save 20–35% within 90 days. We guarantee a minimum 15% reduction or we refund our fee.</p>
-          <div class="sc-deliverables">
-            <h4>What you get</h4>
+          <div class="sc-problem">
+            <h4>The problem it solves</h4>
+            <p>Cloud bills grow in ways that are hard to explain and harder to defend. Reserved instance commitments expire. Unused resources accumulate. Data transfer costs pile up silently. By the time someone notices, the waste has been compounding for months — sometimes years.</p>
+          </div>
+          <div class="sc-delivers">
+            <h4>What we deliver</h4>
+            <p>A focused two-week sprint that surfaces exactly where your cloud spend is going, identifies the highest-impact waste, and delivers a concrete savings roadmap. We pay particular attention to network costs — data egress, inter-region transfer, NAT gateway, and transit charges — which are consistently the most opaque line items on any cloud bill.</p>
+          </div>
+          <div class="sc-deliverables" style="grid-column: 1 / -1;">
+            <h4>What you walk away with</h4>
             <ul>
-              <li>Full cloud spend analysis with savings ranked by impact</li>
-              <li>Rightsizing recommendations and execution plan</li>
-              <li>Reserved instance / savings plan strategy</li>
-              <li>Tagging standards + cost allocation setup</li>
-              <li>Python monitoring and alerting scripts</li>
-              <li>90-day savings forecast</li>
+              <li>Full cost breakdown by service, team, environment, and cloud</li>
+              <li>Identified waste with estimated annual savings for each item</li>
+              <li>Network cost analysis — the line items most reviews overlook</li>
+              <li>Tagging and cost allocation recommendations</li>
+              <li>A prioritized action plan with quick wins and longer-term commitments</li>
             </ul>
           </div>
-          <div class="sc-meta">
-            <!-- <div class="meta-row">
-              <span class="meta-label">Price</span>
-              <span class="meta-value price">$2,500 – $4,000</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">1 – 2 weeks</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Guarantee</span>
-              <span class="meta-value">15% savings or full refund</span>
-            </div>
+          <div style="grid-column: 1 / -1;">
+            <table class="pricing-table">
+              <thead><tr><th>Engagement</th><th>Description</th><th>Investment</th></tr></thead>
+              <tbody>
+                <tr><td>FinOps Quickstart</td><td>Cost audit, waste identification, savings roadmap</td><td>$4,000–$8,000</td></tr>
+                <tr><td>FinOps Implementation</td><td>Tagging strategy, reserved instance planning, rightsizing execution</td><td>$8,000–$15,000</td></tr>
+                <tr><td>FinOps Retainer</td><td>Monthly cost reviews, commitment planning, anomaly investigation</td><td>$1,500–$3,500/mo</td></tr>
+              </tbody>
+            </table>
           </div>
-          <div class="upsell-note">↳ <span>Natural follow-on: Cloud Architecture Review (governance layer) or Silver Retainer (ongoing cost governance)</span></div>
-        </div> -->
+          <div class="sc-platforms">Platforms: <span>AWS · Azure · GCP · OCI</span></div>
+        </div>
 
-        <!-- S2 — Terraform / IaC Foundation Setup -->
-        <!-- <div class="service-card">
+        <!-- 03 — Cloud Foundation Build -->
+        <div class="service-card featured">
           <div class="sc-header">
-            <div class="sc-icon">⚙️</div>
+            <div class="sc-icon">🏗</div>
             <div class="sc-title-block">
               <div class="sc-badges">
-                <span class="badge">Phase 1 Priority</span>
+                <span class="badge lead">Core Delivery</span>
               </div>
-              <div class="sc-name">Terraform / IaC Foundation Setup</div>
+              <div class="sc-name">03 — Cloud Foundation Build</div>
             </div>
           </div>
-          <p class="sc-desc">A production-grade Terraform project structure built from scratch — modules, remote state management, variable strategy, and environment separation for dev, staging, and prod. Designed for teams who want to stop clicking around the console and start treating infrastructure as code.</p>
-          <div class="sc-deliverables">
-            <h4>What you get</h4>
+          <div class="sc-problem">
+            <h4>The problem it solves</h4>
+            <p>Architectures designed under time pressure accumulate debt. What was built to ship fast wasn't designed to scale, secure, or maintain. And diagrams without code — however well-intentioned — sit in Confluence while the actual infrastructure drifts further from what was planned.</p>
+          </div>
+          <div class="sc-delivers">
+            <h4>What we deliver</h4>
+            <p>A complete cloud foundation redesign and IaC implementation delivered as a single engagement. Architecture and code together — because there's no point in a clean design that nobody builds. The output is a fully documented, Terraform or OpenTofu-managed environment your team can understand, extend, and operate with confidence.</p>
+          </div>
+          <div class="sc-deliverables" style="grid-column: 1 / -1;">
+            <h4>What you walk away with</h4>
             <ul>
-              <li>Working Terraform codebase with modular structure</li>
-              <li>Remote state backend configuration (S3/Azure/GCS)</li>
-              <li>Variable strategy and environment separation</li>
-              <li>README and usage documentation</li>
-              <li>1-hour handoff call with your engineering team</li>
+              <li>Redesigned cloud architecture with decision records explaining every choice</li>
+              <li>Full Terraform/OpenTofu codebase: modular, versioned, remote state, CI/CD-ready</li>
+              <li>Network infrastructure in code: VPCs, transit gateways, peering, security groups</li>
+              <li>Runbooks and documentation your team can actually use</li>
+              <li>A handover session so your engineers own it from day one</li>
             </ul>
           </div>
-          <div class="sc-meta">
-            <!-- <div class="meta-row">
-              <span class="meta-label">Price</span>
-              <span class="meta-value price">$2,500 – $5,000</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">2 – 3 weeks</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Platforms</span>
-              <span class="meta-value">AWS · Azure · GCP · OCI</span>
-            </div>
+          <div style="grid-column: 1 / -1;">
+            <table class="pricing-table">
+              <thead><tr><th>Engagement</th><th>Scope</th><th>Investment</th></tr></thead>
+              <tbody>
+                <tr><td>Single-cloud Foundation</td><td>Architecture redesign + IaC, one cloud</td><td>$12,000–$22,000</td></tr>
+                <tr><td>Multi-cloud Foundation</td><td>Architecture redesign + IaC, two or more clouds</td><td>$20,000–$40,000</td></tr>
+                <tr><td>Standalone IaC</td><td>Existing architecture codified in Terraform/OpenTofu</td><td>$6,000–$15,000</td></tr>
+                <tr><td>Architecture Advisory Retainer</td><td>Ongoing advisory as your infrastructure evolves</td><td>$2,500–$5,000/mo</td></tr>
+              </tbody>
+            </table>
           </div>
-          <div class="upsell-note">↳ <span>Natural follow-on: CI/CD Pipeline setup or IaC management retainer (Silver tier)</span></div>
-        </div> -->
+          <div class="sc-platforms">Platforms: <span>AWS · Azure · GCP · OCI</span></div>
+        </div>
 
-        <!-- S6 — Policy-as-Code Setup -->
-        <!-- <div class="service-card">
+        <!-- 04 — Cloud Security Foundations -->
+        <div class="service-card">
           <div class="sc-header">
-            <div class="sc-icon">🛡</div>
+            <div class="sc-icon">🔐</div>
             <div class="sc-title-block">
               <div class="sc-badges">
-                <span class="badge">Phase 1 Priority</span>
+                <span class="badge">Specialist Project</span>
               </div>
-              <div class="sc-name">Policy-as-Code Setup</div>
+              <div class="sc-name">04 — Cloud Security Foundations</div>
             </div>
           </div>
-          <p class="sc-desc">Compliance guardrails enforced automatically on every deployment — using OPA (Open Policy Agent) or HashiCorp Sentinel integrated directly into your Terraform pipeline. Every deployment is checked against your security and compliance policies before it hits production. No manual reviews, no exceptions slipping through.</p>
-          <div class="sc-deliverables">
-            <h4>What you get</h4>
+          <div class="sc-problem">
+            <h4>The problem it solves</h4>
+            <p>Cloud security debt is quiet until it isn't. Overpermissioned IAM roles, missing guardrails, unclear public access settings, and no policy enforcement layer are common in environments that were built fast. The problem compounds when an enterprise customer sends a security questionnaire — or when something goes wrong.</p>
+          </div>
+          <div class="sc-delivers">
+            <h4>What we deliver</h4>
+            <p>The structural security layer that makes a cloud environment defensible: IAM architecture, least-privilege access design, service control policies, and organizational guardrails across every cloud you run. This is cloud security architecture, not penetration testing or managed security operations — we build the foundations.</p>
+          </div>
+          <div class="sc-deliverables" style="grid-column: 1 / -1;">
+            <h4>What you walk away with</h4>
             <ul>
-              <li>OPA or Sentinel policy library for your environment</li>
-              <li>CI/CD pipeline integration (blocks non-compliant deployments)</li>
-              <li>Policy runbook and documentation</li>
-              <li>Handoff call with your DevOps or platform team</li>
+              <li>IAM architecture with least-privilege role design and access documentation</li>
+              <li>Service control policies, Azure Policies, or GCP Org Policies enforced at the organizational level</li>
+              <li>Security baselines across compute, storage, networking, and identity</li>
+              <li>A security posture your team can maintain and extend</li>
             </ul>
           </div>
-          <div class="sc-meta">
-            <!-- <div class="meta-row">
-              <span class="meta-label">Price</span>
-              <span class="meta-value price">$2,500 – $5,000</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">2 – 3 weeks</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Requires</span>
-              <span class="meta-value">Existing Terraform setup or IaC Foundation first</span>
-            </div>
+          <div style="grid-column: 1 / -1;">
+            <table class="pricing-table">
+              <thead><tr><th>Engagement</th><th>Description</th><th>Investment</th></tr></thead>
+              <tbody>
+                <tr><td>Security Foundations Assessment</td><td>Audit of current security posture</td><td>$4,000–$8,000</td></tr>
+                <tr><td>Security Foundations Build</td><td>IAM redesign, guardrails, baseline controls</td><td>$10,000–$20,000</td></tr>
+                <tr><td>Security Posture Retainer</td><td>Ongoing policy reviews, quarterly posture checks</td><td>$2,000–$4,000/mo</td></tr>
+              </tbody>
+            </table>
           </div>
-        </div> -->
-
-        <!-- S3 — CI/CD Pipeline -->
-        <!-- <div class="service-card">
-          <div class="sc-header">
-            <div class="sc-icon">🔄</div>
-            <div class="sc-title-block">
-              <div class="sc-badges">
-                <span class="badge selective">Selective Availability</span>
-              </div>
-              <div class="sc-name">CI/CD Pipeline Design &amp; Automation</div>
-            </div>
-          </div>
-          <p class="sc-desc">A CI/CD pipeline designed around your stack — automated testing hooks, environment promotion strategy, Terraform integration, and rollback handling. We take on a limited number of these engagements at any given time to maintain delivery quality. Enquire to check current availability.</p>
-          <div class="sc-deliverables">
-            <h4>What you get</h4>
-            <ul>
-              <li>Working pipeline (GitHub Actions, GitLab CI, Azure DevOps)</li>
-              <li>Terraform plan/apply workflow with manual approval gates</li>
-              <li>Python automation scripts for operational tasks</li>
-              <li>Documentation and runbook</li>
-            </ul>
-          </div>
-          <div class="sc-meta">
-            <div class="meta-row">
-              <span class="meta-label">Price</span>
-              <span class="meta-value price">$3,500 – $7,000</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Timeline</span>
-              <span class="meta-value">2 – 4 weeks</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-label">Availability</span>
-              <span class="meta-value">Limited — enquire first</span>
-            </div>
-          </div>
-          <div class="upsell-note">↳ <span>Natural follow-on: Policy-as-Code Setup or ongoing pipeline support retainer</span></div>
-        </div> -->
+          <div class="sc-platforms">Platforms: <span>AWS · Azure · GCP · OCI</span></div>
+        </div>
 
       </div><!-- /service-list -->
     </div>
@@ -766,26 +690,30 @@
   <!-- ── FAQ ── -->
   <section id="faq">
     <div class="section-inner">
-      <p class="section-label">// FAQ</p>
+      <p class="section-label">FAQ</p>
       <h2 class="section-heading">Common questions.</h2>
       <div style="margin-bottom: 2.5rem;"></div>
 
       <div class="faq-list">
         <div class="faq-item">
           <div class="faq-q">Do you work with a single cloud?</div>
-          <div class="faq-a">We work across all three major clouds: AWS, Azure, and GCP. Multi-cloud spanning — it's one of the reasons we exist.</div>
+          <div class="faq-a">Yes — though multi-cloud environments are where we have the deepest expertise. Whether you're running entirely on AWS or managing workloads across three platforms, we'll work with what you have.</div>
         </div>
-        <!-- <div class="faq-item">
-          <div class="faq-q">How does the 50% upfront payment work?</div>
-          <div class="faq-a">We invoice 50% at contract signing and 50% upon delivery and client acceptance. The scope is fixed in the SOW before we start, so there's no ambiguity on either side.</div>
-        </div> -->
+        <div class="faq-item">
+          <div class="faq-q">What does a typical engagement look like?</div>
+          <div class="faq-a">Most client relationships start with a Cloud Health Audit or a FinOps Quickstart — a fixed-price, time-boxed engagement that gives both sides a clear picture of what's needed. Larger engagements follow from there, scoped based on what the audit surfaces.</div>
+        </div>
         <div class="faq-item">
           <div class="faq-q">What happens if scope changes mid-project?</div>
-          <div class="faq-a">Any change to deliverables requires a signed change request before we do any additional work. We define this clearly in the SOW upfront. It protects both sides — you get a clear price before we proceed, and we don't do unpaid work.</div>
+          <div class="faq-a">Any change to agreed deliverables requires a signed change request before additional work begins. We define this clearly in the statement of work upfront. It protects both sides — you get a clear price before we proceed, and we don't do unpaid work.</div>
         </div>
         <div class="faq-item">
           <div class="faq-q">Do you need access to our cloud accounts?</div>
           <div class="faq-a">For most engagements, yes. We follow least-privilege access principles and only request the permissions needed for the specific task. We use role-based access — IAM roles, service principals, workload identity — never root or admin credentials. We sign an NDA before any access is granted.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do you do cloud migrations?</div>
+          <div class="faq-a">We handle cloud-to-cloud migrations and workload modernization as part of our Cloud Foundation Build engagements. For large-scale lift-and-shift migrations from on-premises environments, we'll be direct about what's in scope for us and refer you to the right specialists for what isn't.</div>
         </div>
       </div>
     </div>
@@ -795,11 +723,11 @@
   <div class="cta-section" id="contact">
     <div class="cta-inner">
       <div class="cta-text">
-        <h2>Not sure which service fits?</h2>
-        <p>Book a free 30-minute call. We'll tell you honestly what makes sense — even if that's not us.</p>
+        <h2>Not sure which service fits your situation?</h2>
+        <p>Send us a note describing your environment and what's causing friction. We'll review it and follow up to schedule a conversation — and we'll be honest about what makes sense, even if that's not us.</p>
       </div>
       <div class="cta-buttons">
-        <a href="/cdn-cgi/l/email-protection#6b030e0707042b1812051a0a1e1f04060a1f020405450204" class="btn-primary">Book a Discovery Call</a>
+        <a href="mailto:hello@synqmatic.com" class="btn-primary">Get in Touch → hello@synqmatic.com</a>
         <a href="about.html" class="btn-secondary">About the Team →</a>
       </div>
     </div>
